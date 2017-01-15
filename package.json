@@ -1,0 +1,43 @@
+{
+  "name": "react-exp",
+  "version": "0.0.0",
+  "description": "Experimenting with React and Redux",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node index.js",
+    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive",
+    "test:watch": "npm run test -- --watch"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesserosato/react-exp.git"
+  },
+  "keywords": [
+    "react",
+    "experiment"
+  ],
+  "author": "Jesse Rosato <jesse.rosato@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jesserosato/react-exp/issues"
+  },
+  "homepage": "https://github.com/jesserosato/react-exp#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "babel-preset-es2015": "^6.18.0",
+    "chai": "^3.5.0",
+    "chai-immutable": "^1.6.0",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "immutable": "^3.8.1",
+    "redux": "^3.6.0",
+    "socket.io": "^1.7.2"
+  }
+}
